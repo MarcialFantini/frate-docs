@@ -1,0 +1,24 @@
+.bgBody {
+  min-height: 100vh;
+  background: rgba(0, 0, 0, 0.3);
+
+  backdrop-filter: blur(5px);
+
+  position: relative;
+
+  z-index: 4;
+}
+
+.bgBody::before {
+  content: ""; /* Importante para generar el pseudo-elemento */
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 30vw;
+  aspect-ratio: 2;
+  /* Altura del pseudo-elemento igual al contenedor */
+  background-color: rgba(189, 20, 189, 0.2); /* Color del círculo */
+  border-radius: 50%; /* Hacer el pseudo-elemento circular */
+  filter: blur(20px); /* Aplicar desenfoque al pseudo-elemento */
+  z-index: -1;
+}
