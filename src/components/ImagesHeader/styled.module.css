@@ -7,7 +7,6 @@
 
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 10px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -21,6 +20,22 @@
   width: 100%;
 
   transition: all 1s;
+}
+
+.picture1 {
+  transform: translate(-100%, -100%);
+}
+
+.picture2 {
+  transform: translate(100%, -100%);
+}
+
+.picture3 {
+  transform: translate(-100%, 100%);
+}
+
+.picture4 {
+  transform: translate(100%, 100%);
 }
 
 .img {
